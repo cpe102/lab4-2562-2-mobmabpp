@@ -2,11 +2,21 @@
 
 using namespace std;
 
-//Write function findDistance() here
+double findDistance(double x,double y,double z){
+  double s=(x*z)+(0.5*y*z*z);
+  return s;
+}
 
 int main(){
+   double u,a,t;
 
-  //Calling findDistance() using test cases
-
+  cout << "Enter u: ";
+  cin >> u;
+  cout << "\nEnter a: ";
+  cin >> a;
+  cout << "\nEnter t: ";
+  cin >> t;
+  cout << "\nS = "<< findDistance (u,a,t);
+  
   return 0;
 }
